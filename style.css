@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px;
+}
+header{
+    background-color: rgb(7, 74, 76);
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+header ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header a{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+#logo{
+    margin: 0 auto;
+    align-items: center;
+    font-weight: bold;
+    font-size: larger;
+}
+nav ul{
+    display: flex;
+}
+#menu li{
+    padding: 0px 9px;
+}
+#Social-links li{
+    padding: 0px 10px;
+}
+#main{
+    display: flex;
+}
+.aside h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+.aside{
+    /* Very Important Property */
+    background-color:beige;
+    flex: 0 0 21vw;
+    padding-top: 31px;
+}
+.aside li{
+    list-style: none;
+    padding: 10px 15px;
+}
+.aside a{
+    color: rgb(10, 0, 2);
+    display: block;
+    border-bottom: 2px solid black;
+}
+.image img{
+    padding: 40px 15px;
+    width: 100%;
+}
+
+#services{
+    background-color:plum;
+    padding: 15px;
+}
+#service-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-between; */
+}
+/* .service-description{
+    word-wrap: break-word;
+} */
+.designing{
+    /* border: 1px solid gray; */
+    /* Very Important Property */
+    flex-basis: 33.33%;
+    max-width: 370px;
+    padding: 10px;
+}
+.designing img{
+    height: 100%;
+    width: 100%;
+}
+.read-more{
+    align-self: flex-start;
+    margin-top: auto;
+}
+.read-more button{
+    padding: 8px 8px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+.read-more button:hover{
+    background-color: brown;
+    color:greenyellow;
+}
+.designing h3{
+    font-size:17px;
+}
+
+/* <<----------------- Media Query--------------->> */
+@media screen and (max-width: 850px){
+    .designing{
+        flex-basis: 49.8%;
+        align-items: center;
+    }
+    .aside{
+        flex: 0 0 32vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    #logo{
+        order: -1;
+    }
+    #services{
+        background-color: aqua;
+    }
+    #services para{
+        align-items: center;
+    }
+    #service-container{
+        /* background-color: aqua; */
+        flex-direction: column;
+        align-items: center;
+    }
+    #services h2{
+        text-align: center;
+    }
+    #main{
+        flex-direction: column;
+        align-items: center;
+    }
+    article{
+        order: -1;
+    }
+}
+
+
+
